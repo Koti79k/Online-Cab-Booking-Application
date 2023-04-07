@@ -1,0 +1,262 @@
+/*============= Register As A Admin ================*/
+
+{
+  "address": {
+    "city": "Hyderabad",
+    "id": 0,
+    "pincode": "521214",
+    "state": "Telangana"
+  },
+  "email": "Koti@79",
+  "mobile": "9014595789",
+  "password": "Koti123",
+  "userId": 0,
+  "username": "Koti"
+}
+
+/*============= Update Admin Details ================*/
+{
+  "address": {
+    "city": "Hyderabad",
+    "id": 0,
+    "pincode": "521214",
+    "state": "Telangana"
+  },
+  "email": "Krishna79@gmail.com",
+  "mobile": "9014595789",
+  "password": "Krishna123",
+  "userId": 2,
+  "username": "Krishna"
+}
+
+/*=============Insert Cab Details ================*/
+{
+  "cabId": 0,
+  "carType": "Maruti",
+  "ratePerKm": 7
+}
+
+----------->
+{
+  "cabId": 0,
+  "carType": "Toyota",
+  "ratePerKm": 9
+}
+
+/*=============After Updating Cab Details ================*/
+
+{
+  "cabId": 5,
+  "carType": "Maruti",
+  "ratePerKm": 10
+}
+/*=============After Deleting Cab Details :================*/
+
+select * from cab;
++--------+----------+-------------+
+| cab_id | car_type | rate_per_km |
++--------+----------+-------------+
+|      4 | Maruti   |           7 |
++--------+----------+-------------+
+1 row in set (0.00 sec)
+
+/*=============Insert Driver Details ================*/
+{
+  "address": {
+    "city": "Hyd",
+    "id": 0,
+    "pincode": "521214",
+    "state": "Telangana"
+  },
+  "available": true,
+  "cab": {
+    "cabId": 0,
+    "carType": "Maruthi",
+    "ratePerKm": 10
+  },
+  "email": "Rana@123",
+  "licenseNo": 10,
+  "mobile": "9014595789",
+  "password": "Rana123",
+  "rating": 4,
+  "userId": 0,
+  "username": "Rana"
+}
+
+--------------->
+
+{
+  "address": {
+    "city": "Hyd",
+    "id": 0,
+    "pincode": "521214",
+    "state": "Telangana"
+  },
+  "available": true,
+  "cab": {
+    "cabId": 0,
+    "carType": "Maruthi",
+    "ratePerKm": 10
+  },
+  "email": "Raj@123",
+  "licenseNo": 12,
+  "mobile": "9014595789",
+  "password": "Raj123",
+  "rating": 4,
+  "userId": 0,
+  "username": "Raj"
+}
+
+/*=============== Updating Driver Details ==================*/
+
+id=11
+lic=13
+
+/*================ Deleting Driver Details ==================*/
+
+id=11
+
+/*=================Login Customer ========================*/
+
+{
+  "password": "Divya123",
+  "userId": 12
+}
+
+/*=========== Save Customer Details =================*/
+{
+"username":"Divya",
+"address":
+{
+"city":"Hyderabad",
+"state":"Telangana",
+"pincode":"521214"
+},
+"password":"Divya123",
+"mobile":9014595789,
+"email":"Divya79@gmail.com",
+"journey_status":true
+}
+
+----------->
+
+{
+"username":"Jhothi",
+"address":
+{
+"city":"Hyderabad",
+"state":"Telangana",
+"pincode":"521214"
+},
+"password":"Jhothi123",
+"mobile":9014595789,
+"email":"Jhothi79@gmail.com",
+"journey_status":true
+}
+
+/*================= Updating Customer Details =================*/
+{
+"username":"Mohan",
+"address":
+{
+"city":"Hyderabad",
+"state":"Telangana",
+"pincode":"521214"
+},
+"password":"Mohan123",
+"mobile":9014595789,
+"email":"Mohan79@gmail.com",
+"journey_status":true
+}
+
+/*============== Delete Customer Details ====================*/
+
+id=14
+
+/*============== get customer Details ====================*/
+
+id=12
+
+/*============== for Log-Out ====================*/
+
+UUID= caMf4M
+
+/*============== Insert Trip Booking Details ===========*/
+
+{
+  "customerId": 12,
+  "driver": {
+    "address": {
+      "city": "Hyd",
+      "id": 0,
+      "pincode": "521214",
+      "state": "Telangana"
+    },
+    "available": true,
+    "cab": {
+      "cabId": 7,
+      "carType": "Maruti",
+      "ratePerKm": 10
+    },
+    "email": "Rana@123",
+    "licenseNo": 10,
+    "mobile": "9014595789",
+    "password": "Rana123",
+    "rating": 4,
+    "userId": 7,
+    "username": "Rana"
+  },
+  "from_location": "Hyderabad",
+  "fromdate_time": "2022-11-14",
+  "km": 0,
+  "payment": true,
+  "to_location": "Bangalore",
+  "todate_time": "2022-11-14",
+  "totalamount": 10000,
+  "tripBookingId": 0
+}
+
+/*============== Update Trip Booking Details ===========*/
+
+{
+  "customerId": 12,
+  "driver": {
+    "address": {
+      "city": "Hyd",
+      "id": 0,
+      "pincode": "521214",
+      "state": "Telangana"
+    },
+    "available": true,
+    "cab": {
+      "cabId": 7,
+      "carType": "Maruti",
+      "ratePerKm": 10
+    },
+    "email": "Rana@123",
+    "licenseNo": 10,
+    "mobile": "9014595789",
+    "password": "Rana123",
+    "rating": 4,
+    "userId": 7,
+    "username": "Rana"
+  },
+  "from_location": "Bangalore",
+  "fromdate_time": "2022-11-14",
+  "km": 1000,
+  "payment": true,
+  "to_location": "Hyderabad",
+  "todate_time": "2022-11-14",
+  "totalamount": 10000,
+  "tripBookingId": 0
+}
+
+/*================= for Patch =========================*/
+
+id=17
+
+/*============ for deleting trip details =============*/
+
+id=17
+
+/*============================ END =============================*/
